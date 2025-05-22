@@ -1,0 +1,11 @@
+site_name: "Documentação Auth Service"
+theme:
+  name: material
+
+nav:
+  - Introdução: index.md
+  - Arquitetura: arquitetura.md
+  - Componentes: componentes.md
+  - Fluxo de Autenticação: fluxo-autenticacao.md
+  - Endpoints: endpoints.md
+  - JWT e Segurança: jwt.md
