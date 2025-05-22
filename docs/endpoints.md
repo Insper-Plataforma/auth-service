@@ -1,5 +1,7 @@
 # Endpoints
 
+Base URL: `/auth`
+
 ## POST `/auth/register`
 
 Registra um novo usuário.

@@ -4,8 +4,6 @@ O `auth-service` é responsável por autenticar usuários, registrar contas e ge
 
 ## Funcionalidades:
 
-- Registro de usuários
-- Login com email e senha
-- Geração de token JWT
-- Resolução de token (quem é o usuário?)
-- Integração com `account-service` via Feign Client
+- **Autenticação**: Permite que usuários façam login utilizando e-mail e senha.
+- **Registro de Conta**: Permite que novos usuários se registrem no sistema.
+- **Validação de Tokens**: Valida tokens JWT para garantir a autenticidade das requisições.

@@ -9,3 +9,4 @@ nav:
   - Fluxo de Autenticação: fluxo-autenticacao.md
   - Endpoints: endpoints.md
   - JWT e Segurança: jwt.md
+  - Setup: setup.md

@@ -269,6 +269,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Fluxo de Autenticação
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -280,6 +293,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-usuario-se-registra" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Usuário se registra
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-usuario-faz-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Usuário faz login
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-token-e-resolvido" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Token é resolvido
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -329,6 +388,28 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -349,6 +430,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-usuario-se-registra" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Usuário se registra
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-usuario-faz-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Usuário faz login
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-token-e-resolvido" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Token é resolvido
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -364,34 +480,22 @@
 
 
 <h1 id="fluxo-de-autenticacao">Fluxo de Autenticação</h1>
-<ol>
-<li>
-<p><strong>Usuário se registra</strong></p>
-</li>
-<li>
-<p>Envia nome, email, senha</p>
-</li>
+<h2 id="1-usuario-se-registra">1. <strong>Usuário se registra</strong></h2>
+<ul>
+<li>Envia nome, email, senha</li>
 <li><code>auth-service</code> chama <code>account-service</code> para criar a conta</li>
-<li>
-<p>Um token JWT é gerado e retornado</p>
-</li>
-<li>
-<p><strong>Usuário faz login</strong></p>
-</li>
-<li>
-<p>Envia email e senha</p>
-</li>
+<li>Um token JWT é gerado e retornado</li>
+</ul>
+<h2 id="2-usuario-faz-login">2. <strong>Usuário faz login</strong></h2>
+<ul>
+<li>Envia email e senha</li>
 <li><code>auth-service</code> autentica via <code>account-service</code></li>
-<li>
-<p>Um novo token JWT é gerado e retornado</p>
-</li>
-<li>
-<p><strong>Token é resolvido</strong></p>
-</li>
-<li>
-<p>Serviços internos usam <code>/auth/solve</code> para extrair <code>idAccount</code></p>
-</li>
-</ol>
+<li>Um novo token JWT é gerado e retornado</li>
+</ul>
+<h2 id="3-token-e-resolvido">3. <strong>Token é resolvido</strong></h2>
+<ul>
+<li>Serviços internos usam <code>/auth/solve</code> para extrair <code>idAccount</code></li>
+</ul>
 
 
 
