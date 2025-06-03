@@ -266,9 +266,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#estrutura-do-projeto" class="md-nav__link">
+  <a href="#estrutura-de-pastas" class="md-nav__link">
     <span class="md-ellipsis">
-      Estrutura do Projeto
+      Estrutura de Pastas
     </span>
   </a>
   
@@ -428,9 +428,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#estrutura-do-projeto" class="md-nav__link">
+  <a href="#estrutura-de-pastas" class="md-nav__link">
     <span class="md-ellipsis">
-      Estrutura do Projeto
+      Estrutura de Pastas
     </span>
   </a>
   
@@ -462,7 +462,7 @@
 
 
 <h1 id="arquitetura">Arquitetura</h1>
-<h2 id="estrutura-do-projeto">Estrutura do Projeto</h2>
+<h2 id="estrutura-de-pastas">Estrutura de Pastas</h2>
 <pre><code class="language-bash">src/main/java/store/auth/
 │ ├── AuthApplication.java # Classe principal
 │ ├── AuthResource.java # Controller REST
@@ -471,7 +471,8 @@
 │ ├── AuthParser.java # Conversão entre DTOs
 │ └── Register.java # Entidade local
 ├── resources/
-│ └── application.yaml # Configurações do serviço
+│ ├── application.yaml # Configurações de ambiente
+│ └── db/migration/ # Scripts Flyway
 </code></pre>
 <hr />
 <h2 id="comunicacao-com-account-service">Comunicação com Account Service</h2>
