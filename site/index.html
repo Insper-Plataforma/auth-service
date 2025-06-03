@@ -250,6 +250,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#integracao-com-jenkins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integração com Jenkins
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integração com Jenkins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#para-que-serve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Para que serve?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -425,6 +449,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#integracao-com-jenkins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integração com Jenkins
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integração com Jenkins">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#para-que-serve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Para que serve?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -443,12 +491,29 @@
 
 <h1 id="auth-service">Auth Service</h1>
 <p>O <code>auth-service</code> é responsável por autenticar usuários, registrar contas e gerar tokens JWT. Ele atua como ponto central de segurança na plataforma, delegando o gerenciamento de contas ao <code>account-service</code>.</p>
+<hr />
 <h2 id="funcionalidades">Funcionalidades:</h2>
 <ul>
 <li><strong>Autenticação</strong>: Permite que usuários façam login utilizando e-mail e senha.</li>
 <li><strong>Registro de Conta</strong>: Permite que novos usuários se registrem no sistema.</li>
 <li><strong>Validação de Tokens</strong>: Valida tokens JWT para garantir a autenticidade das requisições.</li>
 </ul>
+<hr />
+<h2 id="integracao-com-jenkins">Integração com Jenkins</h2>
+<p>Este projeto conta com um arquivo Jenkinsfile (na raiz do repositório) que define uma pipeline de integração contínua para compilar automaticamente o módulo sempre que houver alterações no repositório.</p>
+<h3 id="para-que-serve">Para que serve?</h3>
+<ul>
+<li>
+<p>Compilação automatizada: toda alteração no repositório dispara o build do Maven, detectando problemas de compilação antes do merge.</p>
+</li>
+<li>
+<p>Imagens Docker consistentes: gera e publica automaticamente imagens multiplataforma, facilitando o deploy em diferentes ambientes (x86_64 e ARM).</p>
+</li>
+<li>
+<p>Segurança das credenciais: utiliza credenciais armazenadas no Jenkins (identificador dockerhub-credential), evitando exposição de senhas no código.</p>
+</li>
+</ul>
+<p>Dessa forma, a integração com Jenkins garante que o auth-service esteja sempre compilando e empacotado corretamente, com uma imagem Docker pronta para ser implantada nos clusters de produção ou QA.</p>
 
 
 

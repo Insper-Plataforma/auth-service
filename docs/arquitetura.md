@@ -1,6 +1,6 @@
 # Arquitetura
 
-## Estrutura do Projeto
+## Estrutura de Pastas
 
 ```bash
 src/main/java/store/auth/
@@ -11,7 +11,8 @@ src/main/java/store/auth/
 │ ├── AuthParser.java # Conversão entre DTOs
 │ └── Register.java # Entidade local
 ├── resources/
-│ └── application.yaml # Configurações do serviço
+│ ├── application.yaml # Configurações de ambiente
+│ └── db/migration/ # Scripts Flyway
 ```
 
 ---
